@@ -19,27 +19,16 @@ function uploadImage() {
 
     const imgFile = document.querySelector('#myFile')
 
-    var mask = document.createElement('img')
-    mask.src = "mask2.png";
-    //document.body.appendChild(mask);
-
-
-    // const mask = document.querySelector('#myMask')
-
     var canv;
 
     var img;
 
     imgFile.addEventListener('change', async () => {
-
-
-
         if (canv) {
 
             canv.remove()
 
         }
-
         if (img) {
             img.remove()
 
@@ -89,17 +78,6 @@ function uploadImage() {
         faceapi.draw.drawFaceLandmarks(canv, detectionForSize)
 
         console.log('hello', detectionForSize)
-        // or get the positions of individual contours,
-        // only available for 68 point face ladnamrks (FaceLandmarks68)
 
-        
-
-
-        function drawMaskToCanvas() {
-            img.append(mask)
-            
-            
-        }
-        drawMaskToCanvas();
     })
 }
