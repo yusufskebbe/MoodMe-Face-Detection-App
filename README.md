@@ -2,7 +2,12 @@
 
 - Face detection app, detects the faces in the picture that the user uploaded to the page, and shows the percentage of accuracy to the user. 
 - In this project I used face-api.js-models
+
+# How application works
+
 - After uploading a picture to the application, the faceapi loads and detects all faces in the picture you uploaded, then a blue canvas shown on the picture, above the canvas there is a number which is the percentage of accuracy. Inside the canvas the face detected parts shown in purple color.  
+
+
 # How to run the app
 
 - You can download the source code or you can use git clone  https://github.com/yusufskebbe/Face-Detection-javascript.git in your terminal, then open the html.index file and run the application
